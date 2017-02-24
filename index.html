@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Week-4-Game</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- My stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    
+      
+  </head>
+
+  <body>
+  	<div class="container">
+  	<header>
+    	<h1>Snowman Fighter!</h1>
+	</header>
+	
+		<div class="player_selection" id="zone0">
+			<div class="players enemies" id="p1" value="0">
+				<div id="p1_name">Player 1</div>
+				<img src="assets/images/image1.png" alt="...">
+				<div id="p1_health">Health: </div>
+			</div>
+	   		<div class="players enemies" id="p2" value="1">
+				<div id="p2_name">Player 2</div>
+	   			<img src="assets/images/image2.png" alt="...">
+	   			<div id="p2_health">Health: </div>
+	   		</div>
+	   		<div class="players enemies" id="p3" value="2">
+				<div class="caption" id="p3_name">Player 3</div>
+				<img src="assets/images/image3.png" alt="...">
+				<div class="caption" id="p3_health">Health: </div>
+	   		</div>
+	   		<div class="players enemies" id="p4" value="3">
+				<div class="caption" id="p4_name">Player 4</div>
+				<img src="assets/images/image4.png" alt="...">
+				<div class="caption" id="p4_health">Health: </div>
+	   		</div>
+	  	</div>
+    
+    	<div class="zoneNames"><h2>Your Snowman</h2></div> 
+	   	<div id="zone1">		     	
+	    </div>
+	   
+	  	<div class="zoneNames"><h2>Snowmen available to Fight</h2></div>
+	    <div id="zone2">    	 			    	
+	    </div>
+	    
+	    <div class="zoneNames"><h2>Fight Zone</h2></div>
+	    <div id="zone3">
+	    	<button type="button">Attack !</button>  			   
+	    </div>   		    	
+	    
+	    <div class="zoneNames"><h2>Defender</h2></div>
+	    <div id="zone4">		    
+		      	   		   	
+	    </div>		
+    
+ 	
+	</div> 
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <!-- <script src="assets/javascript/test.js"></script> -->
+  </body>
+</html>
