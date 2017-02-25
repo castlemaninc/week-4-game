@@ -12,6 +12,7 @@ $(document).ready(function(){
 
     var newGame = function(){
         total = 0;
+        randomVals = [];
         // console.log(total);
         // Total Score is updated in the webpage 
         $("#tot").html("<h2>" + total + "</h2>");
