@@ -20,20 +20,20 @@ $(document).ready(function(){
         $("#winCount").html("<h2>" + wins + "</h2>");
         $("#lossCount").html("<h2>" + losses + "</h2>"); 
 
-        // Random Number is assigned
-        randomNum = Math.floor((Math.random() * 100) + 1);
-        // console.log(randomNum);
+        // Random Number between 19 and 120 is assigned
+        randomNum = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
+        //console.log(randomNum);
 
         // Random number is displayed 
         $("#rand").html("<h2>" + randomNum + "</h2>");
         
         // An array of random values is created 
         for (i=0;i<4;i++){
-            randomVal = Math.floor((Math.random() * 10) + 1);
+            randomVal = Math.floor((Math.random() * 12) + 1);
             randomVals.push(randomVal);            
         };
 
-        // console.log(randomVals);
+        console.log("The crystal values are: " + randomVals);
 
         // The Random Values are given to each crystal
         $("#crystal_1").attr("value",randomVals[0]);
