@@ -1,52 +1,104 @@
-
 html {
-	font-family: 'Pangolin', cursive;
+	font-family: 'Open Sans', sans-serif;
+	
 }
 
+body {
+	background-image: url("../images/diamond_upholstery.png");
+}
 
 h1 {
-	font-size:2em;
+	font-size:1.5em;
+	font-family: 'Fontdiner Swanky', cursive;
 }
 
 h2 {
 	font-size:1.3em;
 }
 
-header {
-	margin-bottom:20px;
+p {
+	font-size:.9em;
 }
-
 
 .container {
-	width: auto;
-	margin:20px;
+	max-width: 300px;
+	margin:auto;	
 }
 
-#zone1 {
+header {
+	margin-top:40px;
+	margin-bottom: 30px;
+	height:50px;
+	width:290px;
+	background-color:rgb(138, 250, 114);
+	text-align: center;
+	line-height: 50px;
 	margin:5px;
+	border:1px solid black;
+	border-radius:4px;
+}
+
+#game_instructions {
+	margin:10px 5px 5px 5px;
+	background:lightgray;
+	padding:5px;
+	border:1px solid black;
+	border-radius:4px;
+}
+
+#random_number {
+	background-color: lightgreen;
+	height:100px;
+	width:190px;
+	margin:5px;
+	float:left;
+	border: 1px solid black;
+	border-radius:4px;
+	padding:5px;
+
+}
+
+#wins_losses {
+	background: lightblue;
+	height:100px;
+	width:60px;
+	margin:5px;
+	float:right;
+	border: 1px solid black;
+	border-radius:4px;
+	padding:5px;
+
+}
+
+#crystals_section {
+	clear:both;
+	height:70px;
+}
+
+.crystal:hover {
+	position:relative;
+	bottom: 3px;
+}
+
+img {
+	width:60px;
+	height:60px;
 	display:inline;
 	float:left;
-}
-
-#zone2 .players {
-	background-color: red;
-}
-
-#zone3 .players {
-	background-color: red;
-}
-
-#p1,#p2,#p3,#p4 {
-	margin:5px;
-	width:120px;
-	float:left;
-	text-align: center;
-	background: lightblue;
 	border: 1px solid black;
+	margin:6px;
+
 }
 
-#zone1,#zone2,#zone3,#zone4,#zone5,.zoneNames{
+
+#total_score {
+	width: 120px;
+	height: 60px;
+	background-color: lightgreen;
+	margin:5px;
+	border: 1px solid black;
+	float:right;
 	clear:both;
-	float:left;
+	border-radius:4px;
+	padding:5px;
 }
-

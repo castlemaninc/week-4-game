@@ -10,76 +10,39 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!-- My stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
-    
+	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Open+Sans" rel="stylesheet">
+	   
       
   </head>
 
-  <body>
-  	<div class="container">
-  	<header>
-    	<h1>Snowman Fighter!</h1>
-	</header>
-	
-		<div class="player_selection" id="zone0">
-			<div class="players enemies" id="p1" value="0">
-				<div id="p1_name">Player 1</div>
-				<img src="assets/images/image1.png" alt="...">
-				<div id="p1_health">Health: </div>
+  	<body>
+	  	<div class="container">
+		  	<header>
+		    	<h1>Crystals Collector</h1>
+			</header>
+			<div id="game_instructions">
+				<p>You will be given a random number at the start of the game.</p><br>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br>
+				<p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p><br>
+				<p>The value of each crystal is hidden from you until you click on it.</p><br>
+				<p>Each time when the game starts, the game will change the values of each crystal.</p>
 			</div>
-	   		<div class="players enemies" id="p2" value="1">
-				<div id="p2_name">Player 2</div>
-	   			<img src="assets/images/image2.png" alt="...">
-	   			<div id="p2_health">Health: </div>
-	   		</div>
-	   		<div class="players enemies" id="p3" value="2">
-				<div class="caption" id="p3_name">Player 3</div>
-				<img src="assets/images/image3.png" alt="...">
-				<div class="caption" id="p3_health">Health: </div>
-	   		</div>
-	   		<div class="players enemies" id="p4" value="3">
-				<div class="caption" id="p4_name">Player 4</div>
-				<img src="assets/images/image4.png" alt="...">
-				<div class="caption" id="p4_health">Health: </div>
-	   		</div>
-	  	</div>
+			<div id="upper_data">
+				<div id="random_number"><p>Random Number:<span id="rand"></span></p></div>
+				<div id="wins_losses"><p>Wins:<span id="winCount"></span></p><br><p>Losses:<span id="lossCount"></span></p></div>
+			<div>
+			<div id="crystals_section">
+				<div class="crystal" id="crystal_1"><img src="assets/images/crystal_blue.jpg"></div>
+				<div class="crystal" id="crystal_2"><img src="assets/images/crystal_green.jpg"></div>
+				<div class="crystal" id="crystal_3"><img src="assets/images/crystal_red.jpg"></div>
+				<div class="crystal" id="crystal_4"><img src="assets/images/crystal_purple.jpg"></div>
+			</div>
+			<div id="total_score"><p>Total Score:</p><span  id="tot"></span></div>		
+		 	
+		</div> 
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="assets/javascript/game.js"></script>
     
-    	<div class="zoneNames"><h2>Your Snowman</h2></div> 
-	   	<div id="zone1">		     	
-	    </div>
-	   
-	  	<div class="zoneNames"><h2>Snowmen available to Fight</h2></div>
-	    <div id="zone2">    	 			    	
-	    </div>
-	    
-	    <div class="zoneNames"><h2>Fight Zone</h2></div>
-	    <div id="zone3">
-	    	<button type="button">Attack !</button>  			   
-	    </div>   		    	
-	    
-	    <div class="zoneNames"><h2>Defender</h2></div>
-	    <div id="zone4">		    
-		      	   		   	
-	    </div>		
-    
- 	
-	</div> 
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
-    <!-- <script src="assets/javascript/test.js"></script> -->
-  </body>
+	</body>
 </html>
